@@ -57,7 +57,7 @@
         data-chapter-title="119A - Juego Épico"
         data-filepath="A/juego-epico.md"
         data-basepath=".."
-        data-revision="Tue Mar 22 2016 19:48:43 GMT-0300 (CLT)"
+        data-revision="Tue Mar 22 2016 22:13:15 GMT-0300 (CLT)"
         data-innerlanguage="">
     
 
@@ -1070,7 +1070,95 @@
                 
                     <section class="normal" id="section-">
                     
-                        <h1 id="119a--juego-&#xE9;pico">119A - Juego &#xC9;pico</h1>
+                        <h1 id="119a-juego-&#xE9;pico">[119A] Juego &#xC9;pico</h1>
+<hr>
+<p><a href="http://codeforces.com/problemset/problem/119/A" target="_blank">Enlace a Codeforces</a></p>
+<table>
+<thead>
+<tr>
+<th><a href=""></a></th>
+<th style="text-align:right"></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>tiempo l&#xED;mite por test</td>
+<td style="text-align:right">2 segundos</td>
+</tr>
+<tr>
+<td>memoria l&#xED;mite por test</td>
+<td style="text-align:right">256 MB</td>
+</tr>
+<tr>
+<td>entrada</td>
+<td style="text-align:right">entrada est&#xE1;ndar</td>
+</tr>
+<tr>
+<td>salida</td>
+<td style="text-align:right">salida est&#xE1;ndar</td>
+</tr>
+</tbody>
+</table>
+<p><br></p>
+<p>Sim&#xF3;n y Antisim&#xF3;n juegan un juego. En un inicio cada jugador recibe un entero
+positivo fijo que no cambia a trav&#xE9;s del juego. Sim&#xF3;n recibe el n&#xFA;mero <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>a</mi></mrow><annotation encoding="application/x-tex">a</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="strut" style="height:0.43056em;"></span><span class="strut bottom" style="height:0.43056em;vertical-align:0em;"></span><span class="base textstyle uncramped"><span class="mord mathit">a</span></span></span></span> y
+Antisim&#xF3;n el n&#xFA;mero <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>b</mi></mrow><annotation encoding="application/x-tex">b</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="strut" style="height:0.69444em;"></span><span class="strut bottom" style="height:0.69444em;vertical-align:0em;"></span><span class="base textstyle uncramped"><span class="mord mathit">b</span></span></span></span>. Tambi&#xE9;n tienen un mont&#xF3;n de <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>n</mi></mrow><annotation encoding="application/x-tex">n</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="strut" style="height:0.43056em;"></span><span class="strut bottom" style="height:0.43056em;vertical-align:0em;"></span><span class="base textstyle uncramped"><span class="mord mathit">n</span></span></span></span> piedras.
+Los jugadores hacen movimientos por turnos y Sim&#xF3;n empieza. Durante un movimiento,
+un jugador debe retirar del mont&#xF3;n una cantidad de piedras igual al m&#xE1;ximo com&#xFA;n
+divisor entre el n&#xFA;mero que ha recibido y el n&#xFA;mero de piedras que quedan en el
+mont&#xF3;n. Un jugador pierde cuando no puede tomar la cantidad requerida de piedras
+(es decir, cuando el mont&#xF3;n tiene <em>estrictamente</em> menos piedras que las que uno
+necesita tomar).</p>
+<p>Tu tarea es determinar qui&#xE9;n gana el juego con unos valores <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>a</mi></mrow><annotation encoding="application/x-tex">a</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="strut" style="height:0.43056em;"></span><span class="strut bottom" style="height:0.43056em;vertical-align:0em;"></span><span class="base textstyle uncramped"><span class="mord mathit">a</span></span></span></span>, <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>b</mi></mrow><annotation encoding="application/x-tex">b</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="strut" style="height:0.69444em;"></span><span class="strut bottom" style="height:0.69444em;vertical-align:0em;"></span><span class="base textstyle uncramped"><span class="mord mathit">b</span></span></span></span> y <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>n</mi></mrow><annotation encoding="application/x-tex">n</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="strut" style="height:0.43056em;"></span><span class="strut bottom" style="height:0.43056em;vertical-align:0em;"></span><span class="base textstyle uncramped"><span class="mord mathit">n</span></span></span></span>
+determinados.</p>
+<h3 id="entrada">Entrada</h3>
+<p>Una l&#xED;nea con tres n&#xFA;meros <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>a</mi></mrow><annotation encoding="application/x-tex">a</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="strut" style="height:0.43056em;"></span><span class="strut bottom" style="height:0.43056em;vertical-align:0em;"></span><span class="base textstyle uncramped"><span class="mord mathit">a</span></span></span></span>, <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>b</mi></mrow><annotation encoding="application/x-tex">b</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="strut" style="height:0.69444em;"></span><span class="strut bottom" style="height:0.69444em;vertical-align:0em;"></span><span class="base textstyle uncramped"><span class="mord mathit">b</span></span></span></span> y <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>n</mi></mrow><annotation encoding="application/x-tex">n</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="strut" style="height:0.43056em;"></span><span class="strut bottom" style="height:0.43056em;vertical-align:0em;"></span><span class="base textstyle uncramped"><span class="mord mathit">n</span></span></span></span> separados por espacio
+(<span class="katex"><span class="katex-mathml"><math><semantics><mrow><mn>1</mn><mo>&#x2264;</mo><mi>a</mi><mo separator="true">,</mo><mi>b</mi><mo separator="true">,</mo><mi>n</mi><mo>&#x2264;</mo><mn>1</mn><mn>0</mn><mn>0</mn></mrow><annotation encoding="application/x-tex">1 \leq a, b, n \leq 100</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="strut" style="height:0.69444em;"></span><span class="strut bottom" style="height:0.8888799999999999em;vertical-align:-0.19444em;"></span><span class="base textstyle uncramped"><span class="mord mathrm">1</span><span class="mrel">&#x2264;</span><span class="mord mathit">a</span><span class="mpunct">,</span><span class="mord mathit">b</span><span class="mpunct">,</span><span class="mord mathit">n</span><span class="mrel">&#x2264;</span><span class="mord mathrm">1</span><span class="mord mathrm">0</span><span class="mord mathrm">0</span></span></span></span>) - los n&#xFA;meros fijos que han recibido Sim&#xF3;n y 
+Antisim&#xF3;n y la cantidad inicial de piedras en el mont&#xF3;n.</p>
+<h3 id="salida">Salida</h3>
+<p>Si Sim&#xF3;n gana, imprime &quot;0&quot; (sin las comillas), de otro modo imprime &quot;1&quot; (sin las
+comillas).</p>
+<h3 id="ejemplos">Ejemplos</h3>
+<pre><code>input:
+3 5 9
+
+output:
+0
+</code></pre><pre><code>input:
+1 1 100
+
+output:
+1
+</code></pre><h4 id="nota">Nota</h4>
+<p>El m&#xE1;ximo com&#xFA;n divisor entre dos enteros positivos <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>a</mi></mrow><annotation encoding="application/x-tex">a</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="strut" style="height:0.43056em;"></span><span class="strut bottom" style="height:0.43056em;vertical-align:0em;"></span><span class="base textstyle uncramped"><span class="mord mathit">a</span></span></span></span> y <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>b</mi></mrow><annotation encoding="application/x-tex">b</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="strut" style="height:0.69444em;"></span><span class="strut bottom" style="height:0.69444em;vertical-align:0em;"></span><span class="base textstyle uncramped"><span class="mord mathit">b</span></span></span></span> es el 
+mayor entero positivo <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>k</mi></mrow><annotation encoding="application/x-tex">k</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="strut" style="height:0.69444em;"></span><span class="strut bottom" style="height:0.69444em;vertical-align:0em;"></span><span class="base textstyle uncramped"><span class="mord mathit" style="margin-right:0.03148em;">k</span></span></span></span>, tal que <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>a</mi></mrow><annotation encoding="application/x-tex">a</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="strut" style="height:0.43056em;"></span><span class="strut bottom" style="height:0.43056em;vertical-align:0em;"></span><span class="base textstyle uncramped"><span class="mord mathit">a</span></span></span></span> sea divisible por <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>k</mi></mrow><annotation encoding="application/x-tex">k</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="strut" style="height:0.69444em;"></span><span class="strut bottom" style="height:0.69444em;vertical-align:0em;"></span><span class="base textstyle uncramped"><span class="mord mathit" style="margin-right:0.03148em;">k</span></span></span></span> sin resto 
+y de modo similar, que <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>b</mi></mrow><annotation encoding="application/x-tex">b</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="strut" style="height:0.69444em;"></span><span class="strut bottom" style="height:0.69444em;vertical-align:0em;"></span><span class="base textstyle uncramped"><span class="mord mathit">b</span></span></span></span> sea divisible por <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>k</mi></mrow><annotation encoding="application/x-tex">k</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="strut" style="height:0.69444em;"></span><span class="strut bottom" style="height:0.69444em;vertical-align:0em;"></span><span class="base textstyle uncramped"><span class="mord mathit" style="margin-right:0.03148em;">k</span></span></span></span> sin resto.
+<span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>m</mi><mi>c</mi><mi>d</mi><mo>(</mo><mi>a</mi><mo separator="true">,</mo><mi>b</mi><mo>)</mo></mrow><annotation encoding="application/x-tex">mcd(a, b)</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="strut" style="height:0.75em;"></span><span class="strut bottom" style="height:1em;vertical-align:-0.25em;"></span><span class="base textstyle uncramped"><span class="mord mathit">m</span><span class="mord mathit">c</span><span class="mord mathit">d</span><span class="mopen">(</span><span class="mord mathit">a</span><span class="mpunct">,</span><span class="mord mathit">b</span><span class="mclose">)</span></span></span></span> representa la operaci&#xF3;n de calcular el m&#xE1;ximo com&#xFA;n divisor para
+los n&#xFA;meros <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>a</mi></mrow><annotation encoding="application/x-tex">a</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="strut" style="height:0.43056em;"></span><span class="strut bottom" style="height:0.43056em;vertical-align:0em;"></span><span class="base textstyle uncramped"><span class="mord mathit">a</span></span></span></span> y <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>b</mi></mrow><annotation encoding="application/x-tex">b</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="strut" style="height:0.69444em;"></span><span class="strut bottom" style="height:0.69444em;vertical-align:0em;"></span><span class="base textstyle uncramped"><span class="mord mathit">b</span></span></span></span>. Espec&#xED;ficamente, <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>m</mi><mi>c</mi><mi>d</mi><mo>(</mo><mi>x</mi><mo separator="true">,</mo><mn>0</mn><mo>)</mo><mo>=</mo><mi>m</mi><mi>c</mi><mi>d</mi><mo>(</mo><mn>0</mn><mo separator="true">,</mo><mi>x</mi><mo>)</mo><mo>=</mo><mi>x</mi></mrow><annotation encoding="application/x-tex">mcd(x, 0) = mcd(0, x) = x</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="strut" style="height:0.75em;"></span><span class="strut bottom" style="height:1em;vertical-align:-0.25em;"></span><span class="base textstyle uncramped"><span class="mord mathit">m</span><span class="mord mathit">c</span><span class="mord mathit">d</span><span class="mopen">(</span><span class="mord mathit">x</span><span class="mpunct">,</span><span class="mord mathrm">0</span><span class="mclose">)</span><span class="mrel">=</span><span class="mord mathit">m</span><span class="mord mathit">c</span><span class="mord mathit">d</span><span class="mopen">(</span><span class="mord mathrm">0</span><span class="mpunct">,</span><span class="mord mathit">x</span><span class="mclose">)</span><span class="mrel">=</span><span class="mord mathit">x</span></span></span></span>.</p>
+<p>En el primer ejemplo el juego ir&#xE1; de este modo:</p>
+<ul>
+<li><p>Sim&#xF3;n deber&#xED;a tomar <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>m</mi><mi>c</mi><mi>d</mi><mo>(</mo><mn>3</mn><mo separator="true">,</mo><mn>9</mn><mo>)</mo><mo>=</mo><mn>3</mn></mrow><annotation encoding="application/x-tex">mcd(3, 9) = 3</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="strut" style="height:0.75em;"></span><span class="strut bottom" style="height:1em;vertical-align:-0.25em;"></span><span class="base textstyle uncramped"><span class="mord mathit">m</span><span class="mord mathit">c</span><span class="mord mathit">d</span><span class="mopen">(</span><span class="mord mathrm">3</span><span class="mpunct">,</span><span class="mord mathrm">9</span><span class="mclose">)</span><span class="mrel">=</span><span class="mord mathrm">3</span></span></span></span> piedras del mont&#xF3;n. Luego de su movimiento,
+quedar&#xE1;n 6 piedras.</p>
+</li>
+<li><p>Antisim&#xF3;n deber&#xED;a tomar <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>m</mi><mi>c</mi><mi>d</mi><mo>(</mo><mn>5</mn><mo separator="true">,</mo><mn>6</mn><mo>)</mo><mo>=</mo><mn>1</mn></mrow><annotation encoding="application/x-tex">mcd(5, 6) = 1</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="strut" style="height:0.75em;"></span><span class="strut bottom" style="height:1em;vertical-align:-0.25em;"></span><span class="base textstyle uncramped"><span class="mord mathit">m</span><span class="mord mathit">c</span><span class="mord mathit">d</span><span class="mopen">(</span><span class="mord mathrm">5</span><span class="mpunct">,</span><span class="mord mathrm">6</span><span class="mclose">)</span><span class="mrel">=</span><span class="mord mathrm">1</span></span></span></span> piedra del mont&#xF3;n. Luego de su movimiento,
+quedar&#xE1;n 5 piedras.</p>
+</li>
+<li><p>Sim&#xF3;n deber&#xED;a tomar <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>m</mi><mi>c</mi><mi>d</mi><mo>(</mo><mn>3</mn><mo separator="true">,</mo><mn>5</mn><mo>)</mo><mo>=</mo><mn>1</mn></mrow><annotation encoding="application/x-tex">mcd(3, 5) = 1</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="strut" style="height:0.75em;"></span><span class="strut bottom" style="height:1em;vertical-align:-0.25em;"></span><span class="base textstyle uncramped"><span class="mord mathit">m</span><span class="mord mathit">c</span><span class="mord mathit">d</span><span class="mopen">(</span><span class="mord mathrm">3</span><span class="mpunct">,</span><span class="mord mathrm">5</span><span class="mclose">)</span><span class="mrel">=</span><span class="mord mathrm">1</span></span></span></span> piedra del mont&#xF3;n. Luego de su movimiento,
+quedar&#xE1;n 4 piedras.</p>
+</li>
+<li><p>Antisim&#xF3;n deber&#xED;a tomar <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>m</mi><mi>c</mi><mi>d</mi><mo>(</mo><mn>5</mn><mo separator="true">,</mo><mn>4</mn><mo>)</mo><mo>=</mo><mn>1</mn></mrow><annotation encoding="application/x-tex">mcd(5, 4) = 1</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="strut" style="height:0.75em;"></span><span class="strut bottom" style="height:1em;vertical-align:-0.25em;"></span><span class="base textstyle uncramped"><span class="mord mathit">m</span><span class="mord mathit">c</span><span class="mord mathit">d</span><span class="mopen">(</span><span class="mord mathrm">5</span><span class="mpunct">,</span><span class="mord mathrm">4</span><span class="mclose">)</span><span class="mrel">=</span><span class="mord mathrm">1</span></span></span></span> piedra del mont&#xF3;n. Luego de su movimiento,
+quedar&#xE1;n 3 piedras.</p>
+</li>
+<li><p>Sim&#xF3;n deber&#xED;a tomar <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>m</mi><mi>c</mi><mi>d</mi><mo>(</mo><mn>3</mn><mo separator="true">,</mo><mn>3</mn><mo>)</mo><mo>=</mo><mn>3</mn></mrow><annotation encoding="application/x-tex">mcd(3, 3) = 3</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="strut" style="height:0.75em;"></span><span class="strut bottom" style="height:1em;vertical-align:-0.25em;"></span><span class="base textstyle uncramped"><span class="mord mathit">m</span><span class="mord mathit">c</span><span class="mord mathit">d</span><span class="mopen">(</span><span class="mord mathrm">3</span><span class="mpunct">,</span><span class="mord mathrm">3</span><span class="mclose">)</span><span class="mrel">=</span><span class="mord mathrm">3</span></span></span></span> piedras del mont&#xF3;n. Luego de su movimiento,
+quedar&#xE1;n 0 piedras.</p>
+</li>
+<li><p>Antisim&#xF3;n deber&#xED;a tomar <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>m</mi><mi>c</mi><mi>d</mi><mo>(</mo><mn>5</mn><mo separator="true">,</mo><mn>0</mn><mo>)</mo><mo>=</mo><mn>5</mn></mrow><annotation encoding="application/x-tex">mcd(5, 0) = 5</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="strut" style="height:0.75em;"></span><span class="strut bottom" style="height:1em;vertical-align:-0.25em;"></span><span class="base textstyle uncramped"><span class="mord mathit">m</span><span class="mord mathit">c</span><span class="mord mathit">d</span><span class="mopen">(</span><span class="mord mathrm">5</span><span class="mpunct">,</span><span class="mord mathrm">0</span><span class="mclose">)</span><span class="mrel">=</span><span class="mord mathrm">5</span></span></span></span> piedras del mont&#xF3;n. Como <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mn>0</mn><mo>&lt;</mo><mn>5</mn></mrow><annotation encoding="application/x-tex">0 &lt; 5</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="strut" style="height:0.64444em;"></span><span class="strut bottom" style="height:0.68354em;vertical-align:-0.0391em;"></span><span class="base textstyle uncramped"><span class="mord mathrm">0</span><span class="mrel">&lt;</span><span class="mord mathrm">5</span></span></span></span>,
+es imposible y Antisim&#xF3;n pierde.</p>
+</li>
+</ul>
+<p>En el segundo ejemplo cada jugador toma una piedra cada movimiento. Como <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>n</mi></mrow><annotation encoding="application/x-tex">n</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="strut" style="height:0.43056em;"></span><span class="strut bottom" style="height:0.43056em;vertical-align:0em;"></span><span class="base textstyle uncramped"><span class="mord mathit">n</span></span></span></span>
+es par, Antisim&#xF3;n toma la &#xFA;ltima piedra y Sim&#xF3;n no puede hacer su movimiento
+despu&#xE9;s de eso.</p>
 
                     
                     </section>
