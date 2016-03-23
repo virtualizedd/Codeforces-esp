@@ -57,7 +57,7 @@
         data-chapter-title="451A - Un juego con palitos"
         data-filepath="A/juego-palitos.md"
         data-basepath=".."
-        data-revision="Tue Mar 22 2016 22:13:15 GMT-0300 (CLT)"
+        data-revision="Wed Mar 23 2016 16:46:46 GMT-0300 (CLT)"
         data-innerlanguage="">
     
 
@@ -1070,7 +1070,86 @@
                 
                     <section class="normal" id="section-">
                     
-                        <h1 id="451a--un-juego-con-palitos">451A - Un juego con palitos</h1>
+                        <h1 id="451a-un-juego-con-palitos">[451A] Un juego con palitos</h1>
+<hr>
+<p><a href="http://codeforces.com/problemset/problem/379/A" target="_blank">Enlace a Codeforces</a></p>
+<table>
+<thead>
+<tr>
+<th><a href=""></a></th>
+<th style="text-align:right"></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>tiempo l&#xED;mite por test</td>
+<td style="text-align:right">1 segundo</td>
+</tr>
+<tr>
+<td>memoria l&#xED;mite por test</td>
+<td style="text-align:right">256 MB</td>
+</tr>
+<tr>
+<td>entrada</td>
+<td style="text-align:right">entrada est&#xE1;ndar</td>
+</tr>
+<tr>
+<td>salida</td>
+<td style="text-align:right">salida est&#xE1;ndar</td>
+</tr>
+</tbody>
+</table>
+<p><br> </p>
+<p>Luego de ganar oro y plata en la IOI(olimpiada internacional de inform&#xE1;tica)
+ del 2014, Akshat y Malkiva quieren divertirse un poco. Ahora juegan a un juego
+ sobre una cuadr&#xED;cula hecha de <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>n</mi></mrow><annotation encoding="application/x-tex">n</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="strut" style="height:0.43056em;"></span><span class="strut bottom" style="height:0.43056em;vertical-align:0em;"></span><span class="base textstyle uncramped"><span class="mord mathit">n</span></span></span></span> palos en horizontal y <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>m</mi></mrow><annotation encoding="application/x-tex">m</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="strut" style="height:0.43056em;"></span><span class="strut bottom" style="height:0.43056em;vertical-align:0em;"></span><span class="base textstyle uncramped"><span class="mord mathit">m</span></span></span></span> en vertical.</p>
+<p>Un <em>punto de intersecci&#xF3;n</em> es cualquier punto de la cuadr&#xED;cula formado por la 
+intersecci&#xF3;n de un palo en horizontal y uno en vertical.</p>
+<p>En la cuadr&#xED;cula mostrada m&#xE1;s abajo, <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>n</mi><mo>=</mo><mn>3</mn></mrow><annotation encoding="application/x-tex">n = 3</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="strut" style="height:0.64444em;"></span><span class="strut bottom" style="height:0.64444em;vertical-align:0em;"></span><span class="base textstyle uncramped"><span class="mord mathit">n</span><span class="mrel">=</span><span class="mord mathrm">3</span></span></span></span>, y <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>m</mi><mo>=</mo><mn>3</mn></mrow><annotation encoding="application/x-tex">m = 3</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="strut" style="height:0.64444em;"></span><span class="strut bottom" style="height:0.64444em;vertical-align:0em;"></span><span class="base textstyle uncramped"><span class="mord mathit">m</span><span class="mrel">=</span><span class="mord mathrm">3</span></span></span></span>. Hay <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>n</mi><mo>+</mo><mi>m</mi><mo>=</mo><mn>6</mn></mrow><annotation encoding="application/x-tex">n + m = 6</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="strut" style="height:0.64444em;"></span><span class="strut bottom" style="height:0.72777em;vertical-align:-0.08333em;"></span><span class="base textstyle uncramped"><span class="mord mathit">n</span><span class="mbin">+</span><span class="mord mathit">m</span><span class="mrel">=</span><span class="mord mathrm">6</span></span></span></span> palos
+en total (los palos en horizontal se muestran en rojo y los verticales en verde).
+Hay <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>n</mi><mo>&#x22C5;</mo><mi>m</mi><mo>=</mo><mn>9</mn></mrow><annotation encoding="application/x-tex">n \cdot m = 9</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="strut" style="height:0.64444em;"></span><span class="strut bottom" style="height:0.64444em;vertical-align:0em;"></span><span class="base textstyle uncramped"><span class="mord mathit">n</span><span class="mbin">&#x22C5;</span><span class="mord mathit">m</span><span class="mrel">=</span><span class="mord mathrm">9</span></span></span></span> puntos de intersecci&#xF3;n, numerados del 1 al 9.</p>
+<p><img src="http://codeforces.com/predownloaded/1e/e0/1ee0eb93293ea2397a45e623d2d810c77ec44c86.png" alt=""></p>
+<p>Las reglas del juego son muy simples. Los jugadores juegan por turnos. Akshat gan&#xF3;
+el oro, as&#xED; que &#xE9;l hace el primer movimiento. Durante su movimiento, un jugador
+debe elegir cualquier punto de intersecci&#xF3;n restante y remover de la cuadr&#xED;cula
+todos los palos por los que pase ese punto de intersecci&#xF3;n. Un jugador pierde si
+no puede hacer su movimiento (es decir, no quedan puntos de intersecci&#xF3;n en la
+cuadr&#xED;cula para hacer su movimiento).</p>
+<p>Asume que ambos jugadores juegan de forma &#xF3;ptima. &#xBF;Qui&#xE9;n ganar&#xE1; el juego?</p>
+<h3 id="entrada">Entrada</h3>
+<p>Dos enteros separados por espacio, <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>n</mi></mrow><annotation encoding="application/x-tex">n</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="strut" style="height:0.43056em;"></span><span class="strut bottom" style="height:0.43056em;vertical-align:0em;"></span><span class="base textstyle uncramped"><span class="mord mathit">n</span></span></span></span> y <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>m</mi></mrow><annotation encoding="application/x-tex">m</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="strut" style="height:0.43056em;"></span><span class="strut bottom" style="height:0.43056em;vertical-align:0em;"></span><span class="base textstyle uncramped"><span class="mord mathit">m</span></span></span></span> (<span class="katex"><span class="katex-mathml"><math><semantics><mrow><mn>1</mn><mo>&#x2264;</mo><mi>n</mi><mo separator="true">,</mo><mi>m</mi><mo>&#x2264;</mo><mn>1</mn><mn>0</mn><mn>0</mn></mrow><annotation encoding="application/x-tex">1 \leq n, m \leq 100</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="strut" style="height:0.64444em;"></span><span class="strut bottom" style="height:0.8388800000000001em;vertical-align:-0.19444em;"></span><span class="base textstyle uncramped"><span class="mord mathrm">1</span><span class="mrel">&#x2264;</span><span class="mord mathit">n</span><span class="mpunct">,</span><span class="mord mathit">m</span><span class="mrel">&#x2264;</span><span class="mord mathrm">1</span><span class="mord mathrm">0</span><span class="mord mathrm">0</span></span></span></span>).</p>
+<h3 id="salida">Salida</h3>
+<p>Imprime una l&#xED;nea con la palabra &quot;Akshat&quot; o &quot;Malkiva&quot; (sin las comillas), 
+dependiendo de qui&#xE9;n gan&#xF3; el juego.</p>
+<h3 id="ejemplos">Ejemplos</h3>
+<pre><code>input:
+2 2
+
+output:
+Malkiva
+</code></pre><pre><code>input:
+2 3
+
+output:
+Malkiva
+</code></pre><pre><code>input:
+3 3
+
+output:
+Akshat
+</code></pre><h4 id="nota">Nota</h4>
+<p><em>Explicaci&#xF3;n del primer ejemplo</em></p>
+<p>La cuadr&#xED;cula tiene cuatro intersecciones, numeradas del 1 al 4</p>
+<p><img src="http://codeforces.com/predownloaded/12/91/1291820581549000d33dfb6344d6551869638bb5.png" alt=""></p>
+<p>Si Akshat elige el punto de intersecci&#xF3;n 1, entonces remover&#xE1; dos palos
+(1-2 y 1-3). La cuadr&#xED;cula resultante se ver&#xE1; as&#xED;:</p>
+<p><img src="http://codeforces.com/predownloaded/d7/dc/d7dcca28c67405f51f3c13e0ef6986ff506df8b1.png" alt=""></p>
+<p>Ahora s&#xF3;lo queda un punto de intersecci&#xF3;n (4). Malkiva debe elegirlo y remover
+ambos palos restantes. Luego de su movimiento la cuadr&#xED;cula estar&#xE1; vac&#xED;a.</p>
+<p>Con la cuadr&#xED;cula vac&#xED;a, Akshat no puede hacer ning&#xFA;n movimiente, por lo que 
+pierde.</p>
+<p>Dado que los 4 puntos de intersecci&#xF3;n son equivalente, Akshat perder&#xE1; sin importar
+qu&#xE9; punto elija.</p>
 
                     
                     </section>
