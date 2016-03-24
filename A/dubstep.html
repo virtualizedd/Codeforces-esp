@@ -57,7 +57,7 @@
         data-chapter-title="208A - Dubstep"
         data-filepath="A/dubstep.md"
         data-basepath=".."
-        data-revision="Wed Mar 23 2016 16:46:46 GMT-0300 (CLT)"
+        data-revision="Thu Mar 24 2016 17:46:35 GMT-0300 (CLT)"
         data-innerlanguage="">
     
 
@@ -1070,7 +1070,75 @@
                 
                     <section class="normal" id="section-">
                     
-                        <h1 id="208a--dubstep">208A - Dubstep</h1>
+                        <h1 id="208a-dubstep">[208A] Dubstep</h1>
+<hr>
+<p><a href="http://codeforces.com/problemset/problem/208/A" target="_blank">Enlace a Codeforces</a></p>
+<table>
+<thead>
+<tr>
+<th><a href=""></a></th>
+<th style="text-align:right"></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>tiempo l&#xED;mite por test</td>
+<td style="text-align:right">2 segundos</td>
+</tr>
+<tr>
+<td>memoria l&#xED;mite por test</td>
+<td style="text-align:right">256 MB</td>
+</tr>
+<tr>
+<td>entrada</td>
+<td style="text-align:right">entrada est&#xE1;ndar</td>
+</tr>
+<tr>
+<td>salida</td>
+<td style="text-align:right">salida est&#xE1;ndar</td>
+</tr>
+</tbody>
+</table>
+<p><br></p>
+<p>Vasya trabaja como DJ en el mejor club nocturno de Berland, y a menudo usa
+m&#xFA;sica dubstep en sus presentaciones. Recientemente, decidi&#xF3; tomar un par de
+canciones antiguas y hacer remezclas dubstep a partir de ellas.</p>
+<p>Asumamos que una canci&#xF3;n consiste de unas cuantas palabras. Para hacer la
+remezcla de esta canci&#xF3;n, Vasya inserta cierto n&#xFA;mero de palabras &quot;WUB&quot; antes de la
+primera palabra de la canci&#xF3;n (el n&#xFA;mero puede ser cero), despu&#xE9;s de la &#xFA;ltima
+palabra (el n&#xFA;mero puede ser cero), y entre las palabras de la canci&#xF3;n (al
+menos una entre cada par de palabras vecinas), y luego une todas las
+palabras, incluyendo los &quot;WUB&quot;, en una sola cadena y reproduce la canci&#xF3;n en el
+club.</p>
+<p>Por ejemplo, una canci&#xF3;n con las palabras &quot;I AM X&quot; se puede transformar en una
+remezcla como &quot;WUBWUBIWUBAMWUBX&quot; y no se puede tranformar a &quot;WUBWUBIAMWUBX&quot;.</p>
+<p>Recientemente, Petya ha o&#xED;do la nueva pista de dubstep de Vasya, pero dado que
+no est&#xE1; al tanto de la m&#xFA;sica moderna, decidi&#xF3; averiguar cu&#xE1;l era la canci&#xF3;n
+inicial que Vasya remezcl&#xF3;. Ayuda a Petya a restaurar la canci&#xF3;n original.</p>
+<h3 id="entrada">Entrada</h3>
+<p>Una cadena no vac&#xED;a, compuesta s&#xF3;lo de letras en min&#xFA;sculas del Ingl&#xE9;s. La longitud
+de la cadena no excede los 200 caracteres. Se da por garantizado que Vasya remezcl&#xF3;
+la canci&#xF3;n, y que ninguna palabra contiene la subcadena &quot;WUB&quot; en ella. Adem&#xE1;s,
+Vasya no cambi&#xF3; el orden de las palabras. Tambi&#xE9;n se garantiza que la canci&#xF3;n
+inicial tiene al menos una palabra.</p>
+<h3 id="ejemplo">Ejemplo</h3>
+<pre><code>input:
+WUBWUBABCWUB
+
+output:
+ABC
+</code></pre><pre><code>input:
+WUBWEWUBAREWUBWUBTHEWUBCHAMPIONSWUBMYWUBFRIENDWUB
+
+output:
+WE ARE THE CHAMPIONS MY FRIEND
+</code></pre><h4 id="nota">Nota</h4>
+<p>En el primer ejemplo: &quot;WUBWUBABCWUB&quot; = &quot;WUB&quot; + &quot;WUB&quot; + &quot;ABC&quot; + &quot;WUB&quot;. Eso significa
+que la canci&#xF3;n originalmente consist&#xED;a s&#xF3;lo de la palabra &quot;ABC&quot;, y que todas las
+palabras &quot;WUB&quot; fueron a&#xF1;adidas por Vasya.</p>
+<p>En el segundo ejemplo, Vasya a&#xF1;adi&#xF3; &quot;WUB&quot; entre todas las palabras vecinas, de
+inicio a fin, excepto por las palabras &quot;ARE&quot; y &quot;THE&quot; - entre ellas Vasya a&#xF1;adi&#xF3;
+dos &quot;WUB&quot;.</p>
 
                     
                     </section>
