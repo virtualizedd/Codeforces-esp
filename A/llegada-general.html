@@ -57,7 +57,7 @@
         data-chapter-title="144A - El arribo del general"
         data-filepath="A/llegada-general.md"
         data-basepath=".."
-        data-revision="Thu Mar 24 2016 17:46:35 GMT-0300 (CLT)"
+        data-revision="Sun Mar 27 2016 15:48:02 GMT-0300 (CLT)"
         data-innerlanguage="">
     
 
@@ -1070,7 +1070,91 @@
                 
                     <section class="normal" id="section-">
                     
-                        <h1 id="144a--el-arribo-del-general">144A - El arribo del general</h1>
+                        <h1 id="144a-el-arribo-del-general">[144A] El arribo del general</h1>
+<hr>
+<p><a href="http://codeforces.com/problemset/problem/144/A" target="_blank">Enlace a Codeforces</a></p>
+<table>
+<thead>
+<tr>
+<th><a href=""></a></th>
+<th style="text-align:right"></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>tiempo l&#xED;mite por test</td>
+<td style="text-align:right">2 segundos</td>
+</tr>
+<tr>
+<td>memoria l&#xED;mite por test</td>
+<td style="text-align:right">256 MB</td>
+</tr>
+<tr>
+<td>entrada</td>
+<td style="text-align:right">entrada est&#xE1;ndar</td>
+</tr>
+<tr>
+<td>salida</td>
+<td style="text-align:right">salida est&#xE1;ndar</td>
+</tr>
+</tbody>
+</table>
+<p><br></p>
+<p>Un ministro de defensa env&#xED;o a un general a inspeccionar al escuadr&#xF3;n militar
+Super Secreto bajo el mando del coronel SuperDuper. Habi&#xE9;ndo visto las noticias,
+el coronel orden&#xF3; a los <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>n</mi></mrow><annotation encoding="application/x-tex">n</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="strut" style="height:0.43056em;"></span><span class="strut bottom" style="height:0.43056em;vertical-align:0em;"></span><span class="base textstyle uncramped"><span class="mord mathit">n</span></span></span></span> soldados del escuadr&#xF3;n alinearse en la plaza de armas.</p>
+<p>Por constituci&#xF3;n militar, los soldados se deber&#xED;an colocar en orden no creciente
+respecto a sus alturas. Pero dado que virtualmente no hay tiempo para hacerlo,
+los soldados se alinean en cualquier orden arbitrario. El general, sin embargo,
+es bastante corto de vista, y piensa que los soldados est&#xE1;n alineados correctamente
+si el primer soldado de la l&#xED;nea tiene la altura m&#xE1;xima y el &#xFA;ltimo tiene la altura
+m&#xED;nima. Por favor, nota que no importa c&#xF3;mo est&#xE9;n posicionados los otros soldados, 
+incluyendo los casos donde hay m&#xE1;s de un soldado cuya altura es la m&#xE1;xima o m&#xED;nima.
+S&#xF3;lo son importantes las alturas del <strong>primer</strong> y <strong>&#xFA;ltimo</strong> soldado.</p>
+<p>Por ejemplo, el general considera correcta la secuencia de alturas (4, 3, 4, 2, 1, 1)
+y incorrecta la secuencia (4, 3, 1, 2, 2).</p>
+<p>En un segundo el coronel puede intercambiar a dos soldados vecinos. Ay&#xFA;dalo a contar
+el menor tiempo que necesita para formar un alineamiento que considere correcto.</p>
+<h3 id="entrada">Entrada</h3>
+<p>La primera l&#xED;nea contiene un &#xFA;nico entero <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>n</mi></mrow><annotation encoding="application/x-tex">n</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="strut" style="height:0.43056em;"></span><span class="strut bottom" style="height:0.43056em;vertical-align:0em;"></span><span class="base textstyle uncramped"><span class="mord mathit">n</span></span></span></span> (<span class="katex"><span class="katex-mathml"><math><semantics><mrow><mn>2</mn><mo>&#x2264;</mo><mi>n</mi><mo>&#x2264;</mo><mn>1</mn><mn>0</mn><mn>0</mn></mrow><annotation encoding="application/x-tex">2 \leq n \leq 100</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="strut" style="height:0.64444em;"></span><span class="strut bottom" style="height:0.78041em;vertical-align:-0.13597em;"></span><span class="base textstyle uncramped"><span class="mord mathrm">2</span><span class="mrel">&#x2264;</span><span class="mord mathit">n</span><span class="mrel">&#x2264;</span><span class="mord mathrm">1</span><span class="mord mathrm">0</span><span class="mord mathrm">0</span></span></span></span>), el n&#xFA;mero
+de soldados en la l&#xED;nea. La segunda l&#xED;nea contiene a los enteros <span class="katex"><span class="katex-mathml"><math><semantics><mrow><msub><mi>a</mi><mn>1</mn></msub><mo separator="true">,</mo><msub><mi>a</mi><mn>2</mn></msub><mo separator="true">,</mo><mo>&#x2026;</mo><mo separator="true">,</mo><msub><mi>a</mi><mi>n</mi></msub></mrow><annotation encoding="application/x-tex">a_1, a_2, \ldots
+, a_n</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="strut" style="height:0.43056em;"></span><span class="strut bottom" style="height:0.625em;vertical-align:-0.19444em;"></span><span class="base textstyle uncramped"><span class="mord"><span class="mord mathit">a</span><span class="vlist"><span style="top:0.15em;margin-right:0.05em;margin-left:0em;"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">&#x200B;</span></span><span class="reset-textstyle scriptstyle cramped"><span class="mord mathrm">1</span></span></span><span class="baseline-fix"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">&#x200B;</span></span>&#x200B;</span></span></span><span class="mpunct">,</span><span class="mord"><span class="mord mathit">a</span><span class="vlist"><span style="top:0.15em;margin-right:0.05em;margin-left:0em;"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">&#x200B;</span></span><span class="reset-textstyle scriptstyle cramped"><span class="mord mathrm">2</span></span></span><span class="baseline-fix"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">&#x200B;</span></span>&#x200B;</span></span></span><span class="mpunct">,</span><span class="minner">&#x2026;</span><span class="mpunct">,</span><span class="mord"><span class="mord mathit">a</span><span class="vlist"><span style="top:0.15em;margin-right:0.05em;margin-left:0em;"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">&#x200B;</span></span><span class="reset-textstyle scriptstyle cramped"><span class="mord mathit">n</span></span></span><span class="baseline-fix"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">&#x200B;</span></span>&#x200B;</span></span></span></span></span></span> (<span class="katex"><span class="katex-mathml"><math><semantics><mrow><mn>1</mn><mo>&#x2264;</mo><msub><mi>a</mi><mi>i</mi></msub><mo>&#x2264;</mo><mn>1</mn><mn>0</mn><mn>0</mn></mrow><annotation encoding="application/x-tex">1 \leq a_i \leq 100</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="strut" style="height:0.64444em;"></span><span class="strut bottom" style="height:0.79444em;vertical-align:-0.15em;"></span><span class="base textstyle uncramped"><span class="mord mathrm">1</span><span class="mrel">&#x2264;</span><span class="mord"><span class="mord mathit">a</span><span class="vlist"><span style="top:0.15em;margin-right:0.05em;margin-left:0em;"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">&#x200B;</span></span><span class="reset-textstyle scriptstyle cramped"><span class="mord mathit">i</span></span></span><span class="baseline-fix"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">&#x200B;</span></span>&#x200B;</span></span></span><span class="mrel">&#x2264;</span><span class="mord mathrm">1</span><span class="mord mathrm">0</span><span class="mord mathrm">0</span></span></span></span>), las alturas de los soldados de inicio a fin.
+Los n&#xFA;meros <span class="katex"><span class="katex-mathml"><math><semantics><mrow><msub><mi>a</mi><mn>1</mn></msub><mo separator="true">,</mo><msub><mi>a</mi><mn>2</mn></msub><mo separator="true">,</mo><mo>&#x2026;</mo><mo separator="true">,</mo><msub><mi>a</mi><mi>n</mi></msub></mrow><annotation encoding="application/x-tex">a_1, a_2, \ldots, a_n</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="strut" style="height:0.43056em;"></span><span class="strut bottom" style="height:0.625em;vertical-align:-0.19444em;"></span><span class="base textstyle uncramped"><span class="mord"><span class="mord mathit">a</span><span class="vlist"><span style="top:0.15em;margin-right:0.05em;margin-left:0em;"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">&#x200B;</span></span><span class="reset-textstyle scriptstyle cramped"><span class="mord mathrm">1</span></span></span><span class="baseline-fix"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">&#x200B;</span></span>&#x200B;</span></span></span><span class="mpunct">,</span><span class="mord"><span class="mord mathit">a</span><span class="vlist"><span style="top:0.15em;margin-right:0.05em;margin-left:0em;"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">&#x200B;</span></span><span class="reset-textstyle scriptstyle cramped"><span class="mord mathrm">2</span></span></span><span class="baseline-fix"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">&#x200B;</span></span>&#x200B;</span></span></span><span class="mpunct">,</span><span class="minner">&#x2026;</span><span class="mpunct">,</span><span class="mord"><span class="mord mathit">a</span><span class="vlist"><span style="top:0.15em;margin-right:0.05em;margin-left:0em;"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">&#x200B;</span></span><span class="reset-textstyle scriptstyle cramped"><span class="mord mathit">n</span></span></span><span class="baseline-fix"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">&#x200B;</span></span>&#x200B;</span></span></span></span></span></span> no necesariamente son diferentes.</p>
+<h3 id="salida">Salida</h3>
+<p>Un entero - la cantidad m&#xED;nima de segundos que necesita el coronel para formar
+una alineaci&#xF3;n que le guste.</p>
+<h3 id="ejemplos">Ejemplos</h3>
+<pre><code>input:
+4
+33 44 11 22
+
+output:
+2
+</code></pre><pre><code>input:
+7 
+10 10 58 31 63 40 76
+
+output:
+10
+</code></pre><h4 id="nota">Nota</h4>
+<p>En el primer ejemplo el coronel necesitar&#xE1; intercambiar al primer y segundo
+soldado y luego al tercero y al cuarto. Eso le tomar&#xE1; 2 segundos. La posici&#xF3;n
+resultante ser&#xE1; (44, 33, 22, 11)</p>
+<p>En el segundo ejemplo, el coronel puede intercambiar los soldados como se muestra
+en la siguiente secuencia:</p>
+<ol>
+<li>(10, 10, 58, 31, 63, 40, 76)</li>
+<li>(10, 58, 10, 31, 63, 40, 76)</li>
+<li>(10, 58, 10, 31, 63, 76, 40)</li>
+<li>(10, 58, 10, 31, 76, 63, 40)</li>
+<li>(10, 58, 31, 10, 76, 63, 40)</li>
+<li>(10, 58, 31, 76, 10, 63, 40)</li>
+<li>(10, 58, 31, 76, 63, 10, 40)</li>
+<li>(10, 58, 76, 31, 63, 10, 40)</li>
+<li>(10, 76, 58, 31, 63, 10, 40)</li>
+<li>(76, 10, 58, 31, 63, 10, 40)</li>
+<li>(76, 10, 58, 31, 63, 40, 10) </li>
+</ol>
 
                     
                     </section>

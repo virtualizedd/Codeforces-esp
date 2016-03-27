@@ -57,7 +57,7 @@
         data-chapter-title="344A - Magnetos"
         data-filepath="A/magnetos.md"
         data-basepath=".."
-        data-revision="Thu Mar 24 2016 17:46:35 GMT-0300 (CLT)"
+        data-revision="Sun Mar 27 2016 15:48:02 GMT-0300 (CLT)"
         data-innerlanguage="">
     
 
@@ -1070,7 +1070,82 @@
                 
                     <section class="normal" id="section-">
                     
-                        <h1 id="344a--magnetos">344A - Magnetos</h1>
+                        <h1 id="344a-im&#xE1;nes">[344A] Im&#xE1;nes</h1>
+<hr>
+<p><a href="http://codeforces.com/problemset/problem/344/A" target="_blank">Enlace a Codeforces</a></p>
+<table>
+<thead>
+<tr>
+<th><a href=""></a></th>
+<th style="text-align:right"></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>tiempo l&#xED;mite por test</td>
+<td style="text-align:right">1 segundo</td>
+</tr>
+<tr>
+<td>memoria l&#xED;mite por test</td>
+<td style="text-align:right">256 MB</td>
+</tr>
+<tr>
+<td>entrada</td>
+<td style="text-align:right">entrada est&#xE1;ndar</td>
+</tr>
+<tr>
+<td>salida</td>
+<td style="text-align:right">salida est&#xE1;ndar</td>
+</tr>
+</tbody>
+</table>
+<p><br></p>
+<p>El cient&#xED;fico loco Mike se entretiene agrupando filas de domin&#xF3;s. Aunque no
+necesita domin&#xF3;s; en su lugar, usa imanes rectangulares. Cada im&#xE1;n tiene dos
+polos, uno positivo (uno &quot;m&#xE1;s&quot;) y uno negativo (uno &quot;menos&quot;). Si dos im&#xE1;nes se
+colocan a una distancia cercana, entonces los polos iguales se repeler&#xE1;n y los
+polos opuestos se atraer&#xE1;n.</p>
+<p>Mike comienza colocando horizontalmente un im&#xE1;n sobre la mesa. Durante cada paso,
+Mike a&#xF1;ade un im&#xE1;n en posici&#xF3;n horizontal al final de la fila. Dependiendo de c&#xF3;mo
+MIke ponga el im&#xE1;n en la mesa, este se ver&#xE1; atra&#xED;do al anterior (formando un grupo
+de m&#xFA;ltiples im&#xE1;nes enlazados) o repelido (entonces Mike coloca este im&#xE1;n a alguna
+distancia a la derecha del anterior). Asumimos que un im&#xE1;n solitorio, no enlazado
+a ning&#xFA;n otro forma un grupo por s&#xED; mismo.</p>
+<p><img src="http://codeforces.com/predownloaded/24/1f/241face1b1e11cfb8bf591b3e609248bf6d85d78.png" alt=""></p>
+<p>Mike agrup&#xF3; m&#xFA;ltiples im&#xE1;nes en una fila. Determina cuantos grupos de im&#xE1;nes se
+formaron.</p>
+<h3 id="entrada">Entrada</h3>
+<p>La primera l&#xED;nea contiene un entero <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>n</mi></mrow><annotation encoding="application/x-tex">n</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="strut" style="height:0.43056em;"></span><span class="strut bottom" style="height:0.43056em;vertical-align:0em;"></span><span class="base textstyle uncramped"><span class="mord mathit">n</span></span></span></span> (<span class="katex"><span class="katex-mathml"><math><semantics><mrow><mn>1</mn><mo>&#x2264;</mo><mi>n</mi><mo>&#x2264;</mo><mn>1</mn><mn>0</mn><mn>0</mn><mn>0</mn><mn>0</mn><mn>0</mn></mrow><annotation encoding="application/x-tex">1 \leq n \leq 100000</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="strut" style="height:0.64444em;"></span><span class="strut bottom" style="height:0.78041em;vertical-align:-0.13597em;"></span><span class="base textstyle uncramped"><span class="mord mathrm">1</span><span class="mrel">&#x2264;</span><span class="mord mathit">n</span><span class="mrel">&#x2264;</span><span class="mord mathrm">1</span><span class="mord mathrm">0</span><span class="mord mathrm">0</span><span class="mord mathrm">0</span><span class="mord mathrm">0</span><span class="mord mathrm">0</span></span></span></span>), el n&#xFA;mero
+de im&#xE1;nes. Luego le siguen <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>n</mi></mrow><annotation encoding="application/x-tex">n</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="strut" style="height:0.43056em;"></span><span class="strut bottom" style="height:0.43056em;vertical-align:0em;"></span><span class="base textstyle uncramped"><span class="mord mathit">n</span></span></span></span> l&#xED;neas. La i-&#xE9;sima l&#xED;nea (<span class="katex"><span class="katex-mathml"><math><semantics><mrow><mn>1</mn><mo>&#x2264;</mo><mi>i</mi><mo>&#x2264;</mo><mi>n</mi></mrow><annotation encoding="application/x-tex">1 \leq i \leq n</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="strut" style="height:0.65952em;"></span><span class="strut bottom" style="height:0.79549em;vertical-align:-0.13597em;"></span><span class="base textstyle uncramped"><span class="mord mathrm">1</span><span class="mrel">&#x2264;</span><span class="mord mathit">i</span><span class="mrel">&#x2264;</span><span class="mord mathit">n</span></span></span></span>)
+contiene ya sea los caracteres &quot;01&quot;, si Mike coloca el i-&#xE9;simo im&#xE1;n en posici&#xF3;n
+&quot;m&#xE1;s-menos&quot;, o los caracteres &quot;10&quot;, si Mike lo coloca en posici&#xF3;n &quot;menos-m&#xE1;s&quot;.</p>
+<h3 id="salida">Salida</h3>
+<p>Un entero - el n&#xFA;mero de grupos de im&#xE1;nes que se forman.</p>
+<h3 id="ejemplos">Ejemplos</h3>
+<pre><code>input:
+6
+10
+10
+10
+01
+10
+10
+
+output:
+3
+</code></pre><pre><code>input:
+4
+01
+01
+10
+10
+
+output:
+2
+</code></pre><h4 id="nota">Nota</h4>
+<p>El primer caso de prueba corresponde al de la imagen. Tiene tres grupos que
+consisten de tres, uno y dos im&#xE1;nes, respectivamente.</p>
+<p>El segundo caso de prueba tiene dos grupos, cada uno con dos im&#xE1;nes.</p>
 
                     
                     </section>

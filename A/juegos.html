@@ -57,7 +57,7 @@
         data-chapter-title="268A - Juegos"
         data-filepath="A/juegos.md"
         data-basepath=".."
-        data-revision="Thu Mar 24 2016 17:46:35 GMT-0300 (CLT)"
+        data-revision="Sun Mar 27 2016 15:48:02 GMT-0300 (CLT)"
         data-innerlanguage="">
     
 
@@ -1070,7 +1070,91 @@
                 
                     <section class="normal" id="section-">
                     
-                        <h1 id="268a--juegos">268A - Juegos</h1>
+                        <h1 id="268a-partidos">[268A] Partidos</h1>
+<hr>
+<p><a href="http://codeforces.com/problemset/problem/268/A" target="_blank">Enlace a Codeforces</a></p>
+<table>
+<thead>
+<tr>
+<th><a href=""></a></th>
+<th style="text-align:right"></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>tiempo l&#xED;mite por test</td>
+<td style="text-align:right">1 segundo</td>
+</tr>
+<tr>
+<td>memoria l&#xED;mite por test</td>
+<td style="text-align:right">256 MB</td>
+</tr>
+<tr>
+<td>entrada</td>
+<td style="text-align:right">entrada est&#xE1;ndar</td>
+</tr>
+<tr>
+<td>salida</td>
+<td style="text-align:right">salida est&#xE1;ndar</td>
+</tr>
+</tbody>
+</table>
+<p><br></p>
+<p>Manao trabaja en un canal de deportes. Ha estado gastando muchas horas viendo los
+partidos de f&#xFA;tbol de la liga de alg&#xFA;n pa&#xED;s. Tras un tiempo, comenz&#xF3; a notar distintos patrones.
+Por ejemplo, cada equipo tiene dos conjuntos de uniformes: el uniforme de
+local y el de visita. Y cuando un equipo juega un partido de local, los jugadores
+se ponen el uniforme de local, con una s&#xF3;la excepci&#xF3;n: cuando el color del uniforme
+de local del equipo anfitri&#xF3;n coincide con el uniforme de la visita, el equipo
+anfitri&#xF3;n se debe colocar el uniforme de visita tambi&#xE9;n. Para cada equipo el color
+del uniforme de local y de visita son diferentes.</p>
+<p>Hay <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>n</mi></mrow><annotation encoding="application/x-tex">n</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="strut" style="height:0.43056em;"></span><span class="strut bottom" style="height:0.43056em;vertical-align:0em;"></span><span class="base textstyle uncramped"><span class="mord mathit">n</span></span></span></span> equipos formando parte del campeonato nacional. El campeonato consiste
+de <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>n</mi><mo>&#x22C5;</mo><mo>(</mo><mi>n</mi><mo>&#x2212;</mo><mn>1</mn><mo>)</mo></mrow><annotation encoding="application/x-tex">n \cdot (n - 1)</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="strut" style="height:0.75em;"></span><span class="strut bottom" style="height:1em;vertical-align:-0.25em;"></span><span class="base textstyle uncramped"><span class="mord mathit">n</span><span class="mbin">&#x22C5;</span><span class="mopen">(</span><span class="mord mathit">n</span><span class="mbin">&#x2212;</span><span class="mord mathrm">1</span><span class="mclose">)</span></span></span></span> partidos; cada equpo invita a todos los otros a su estadio.
+A esta altura, Manao se preguntaba: &#xBF;Cu&#xE1;ntas veces durante el campeonato un equipo
+anfitri&#xF3;n se colocar&#xE1; el uniforme de visita? Nota que el orden de los partidos no
+afecta a este n&#xFA;mero.</p>
+<p>Sabes los colores de los uniformes local y visita de cada equipo. Por simplicidad,
+los colores se numeran con enteros de tal forma que ning&#xFA;n par de colores distintos
+tiene el mismo n&#xFA;mero. Ayuda a Manao a encontrar la respuesta a su pregunta.</p>
+<h3 id="entrada">Entrada</h3>
+<p>La primera l&#xED;nea contiene un entero <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>n</mi></mrow><annotation encoding="application/x-tex">n</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="strut" style="height:0.43056em;"></span><span class="strut bottom" style="height:0.43056em;vertical-align:0em;"></span><span class="base textstyle uncramped"><span class="mord mathit">n</span></span></span></span> (<span class="katex"><span class="katex-mathml"><math><semantics><mrow><mn>2</mn><mo>&#x2264;</mo><mi>n</mi><mo>&#x2264;</mo><mn>3</mn><mn>0</mn></mrow><annotation encoding="application/x-tex">2 \leq n \leq 30</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="strut" style="height:0.64444em;"></span><span class="strut bottom" style="height:0.78041em;vertical-align:-0.13597em;"></span><span class="base textstyle uncramped"><span class="mord mathrm">2</span><span class="mrel">&#x2264;</span><span class="mord mathit">n</span><span class="mrel">&#x2264;</span><span class="mord mathrm">3</span><span class="mord mathrm">0</span></span></span></span>). Cada una de las
+sigueintes <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>n</mi></mrow><annotation encoding="application/x-tex">n</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="strut" style="height:0.43056em;"></span><span class="strut bottom" style="height:0.43056em;vertical-align:0em;"></span><span class="base textstyle uncramped"><span class="mord mathit">n</span></span></span></span> l&#xED;neas contiene un par de enteros separados por espacios <span class="katex"><span class="katex-mathml"><math><semantics><mrow><msub><mi>h</mi><mi>i</mi></msub></mrow><annotation encoding="application/x-tex">h_i</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="strut" style="height:0.69444em;"></span><span class="strut bottom" style="height:0.84444em;vertical-align:-0.15em;"></span><span class="base textstyle uncramped"><span class="mord"><span class="mord mathit">h</span><span class="vlist"><span style="top:0.15em;margin-right:0.05em;margin-left:0em;"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">&#x200B;</span></span><span class="reset-textstyle scriptstyle cramped"><span class="mord mathit">i</span></span></span><span class="baseline-fix"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">&#x200B;</span></span>&#x200B;</span></span></span></span></span></span>
+y <span class="katex"><span class="katex-mathml"><math><semantics><mrow><msub><mi>a</mi><mi>i</mi></msub></mrow><annotation encoding="application/x-tex">a_i</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="strut" style="height:0.43056em;"></span><span class="strut bottom" style="height:0.58056em;vertical-align:-0.15em;"></span><span class="base textstyle uncramped"><span class="mord"><span class="mord mathit">a</span><span class="vlist"><span style="top:0.15em;margin-right:0.05em;margin-left:0em;"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">&#x200B;</span></span><span class="reset-textstyle scriptstyle cramped"><span class="mord mathit">i</span></span></span><span class="baseline-fix"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">&#x200B;</span></span>&#x200B;</span></span></span></span></span></span> (<span class="katex"><span class="katex-mathml"><math><semantics><mrow><mn>1</mn><mo>&#x2264;</mo><msub><mi>h</mi><mi>i</mi></msub><mo separator="true">,</mo><msub><mi>a</mi><mi>i</mi></msub><mo>&#x2264;</mo><mn>1</mn><mn>0</mn><mn>0</mn></mrow><annotation encoding="application/x-tex">1 \leq h_i, a_i \leq 100</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="strut" style="height:0.69444em;"></span><span class="strut bottom" style="height:0.8888799999999999em;vertical-align:-0.19444em;"></span><span class="base textstyle uncramped"><span class="mord mathrm">1</span><span class="mrel">&#x2264;</span><span class="mord"><span class="mord mathit">h</span><span class="vlist"><span style="top:0.15em;margin-right:0.05em;margin-left:0em;"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">&#x200B;</span></span><span class="reset-textstyle scriptstyle cramped"><span class="mord mathit">i</span></span></span><span class="baseline-fix"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">&#x200B;</span></span>&#x200B;</span></span></span><span class="mpunct">,</span><span class="mord"><span class="mord mathit">a</span><span class="vlist"><span style="top:0.15em;margin-right:0.05em;margin-left:0em;"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">&#x200B;</span></span><span class="reset-textstyle scriptstyle cramped"><span class="mord mathit">i</span></span></span><span class="baseline-fix"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">&#x200B;</span></span>&#x200B;</span></span></span><span class="mrel">&#x2264;</span><span class="mord mathrm">1</span><span class="mord mathrm">0</span><span class="mord mathrm">0</span></span></span></span>) - los colores de los uniformes de local
+y visita del i-&#xE9;simo equipo, respectivamente.</p>
+<h3 id="salida">Salida</h3>
+<p>Un entero - la cantidad de partidos donde el equipo anfitri&#xF3;n jugar&#xE1; con su
+uniforme de visita.</p>
+<h3 id="ejemplos">Ejemplos</h3>
+<pre><code>3
+1 2
+2 4
+3 4
+
+output:
+1
+</code></pre><pre><code>input:
+4 
+100 42
+42 100
+5 42
+100 5
+
+output:
+5
+</code></pre><pre><code>input:
+2
+1 2
+1 2
+
+output:
+0
+</code></pre><h4 id="nota">Nota</h4>
+<p>En el primer caso, el campeonato consiste de 6 partidos. El &#xFA;nico partido d&#xF3;nde ocurre
+lo planteado por la pregunta es el partido entre los equipos 2 y 6, en el estadio del equipo
+2.</p>
+<p>En el segundo caso, el equipo anfitri&#xF3;n vestir&#xE1; uniforme de visita en los partidos
+entre los equipos 1 y 2, 2 y 1, 2 y 3, 3 y 4, 4 y 2 (con el equipo anfitri&#xF3;n escrito
+primero).</p>
 
                     
                     </section>
