@@ -57,7 +57,7 @@
         data-chapter-title="492A - Vanya y los cubos"
         data-filepath="A/vanya-cubos.md"
         data-basepath=".."
-        data-revision="Sun Mar 27 2016 15:48:02 GMT-0300 (CLT)"
+        data-revision="Fri Apr 01 2016 16:22:21 GMT-0300 (CLST)"
         data-innerlanguage="">
     
 
@@ -1070,7 +1070,59 @@
                 
                     <section class="normal" id="section-">
                     
-                        <h1 id="492a--vanya-y-los-cubos">492A - Vanya y los cubos</h1>
+                        <h1 id="492a-vanya-y-los-cubos">[492A] Vanya y los cubos</h1>
+<hr>
+<p><a href="http://codeforces.com/problemset/problem/492/A" target="_blank">Enlace a Codeforces</a></p>
+<table>
+<thead>
+<tr>
+<th><a href=""></a></th>
+<th style="text-align:right"></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>tiempo l&#xED;mite por test</td>
+<td style="text-align:right">1 segundo</td>
+</tr>
+<tr>
+<td>memoria l&#xED;mite por test</td>
+<td style="text-align:right">256 MB</td>
+</tr>
+<tr>
+<td>entrada</td>
+<td style="text-align:right">entrada est&#xE1;ndar</td>
+</tr>
+<tr>
+<td>salida</td>
+<td style="text-align:right">salida est&#xE1;ndar</td>
+</tr>
+</tbody>
+</table>
+<p>Vanya tiene <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>n</mi></mrow><annotation encoding="application/x-tex">n</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="strut" style="height:0.43056em;"></span><span class="strut bottom" style="height:0.43056em;vertical-align:0em;"></span><span class="base textstyle uncramped"><span class="mord mathit">n</span></span></span></span> cubos. Decidi&#xF3; construir una pir&#xE1;mide con ellos. Vanya quiere
+construir la pir&#xE1;mide de la siguiente forma: la cima de la pir&#xE1;mide debe tener 1
+cubo, el segundo nivel debe contener <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mn>1</mn><mo>+</mo><mn>2</mn><mo>=</mo><mn>3</mn></mrow><annotation encoding="application/x-tex">1 + 2 = 3</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="strut" style="height:0.64444em;"></span><span class="strut bottom" style="height:0.72777em;vertical-align:-0.08333em;"></span><span class="base textstyle uncramped"><span class="mord mathrm">1</span><span class="mbin">+</span><span class="mord mathrm">2</span><span class="mrel">=</span><span class="mord mathrm">3</span></span></span></span> cubos, el tercer nivel debe
+tener <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mn>1</mn><mo>+</mo><mn>2</mn><mo>+</mo><mn>3</mn><mo>=</mo><mn>6</mn></mrow><annotation encoding="application/x-tex">1 + 2 + 3 = 6</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="strut" style="height:0.64444em;"></span><span class="strut bottom" style="height:0.72777em;vertical-align:-0.08333em;"></span><span class="base textstyle uncramped"><span class="mord mathrm">1</span><span class="mbin">+</span><span class="mord mathrm">2</span><span class="mbin">+</span><span class="mord mathrm">3</span><span class="mrel">=</span><span class="mord mathrm">6</span></span></span></span> cubos, y as&#xED; en adelante.</p>
+<p>Vanya quiere saber cu&#xE1;l es la altura m&#xE1;xima de la pir&#xE1;mide que puede construir usando
+los cubos que tiene.</p>
+<h3 id="entrada">Entrada</h3>
+<p>Un entero <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>n</mi></mrow><annotation encoding="application/x-tex">n</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="strut" style="height:0.43056em;"></span><span class="strut bottom" style="height:0.43056em;vertical-align:0em;"></span><span class="base textstyle uncramped"><span class="mord mathit">n</span></span></span></span> (<span class="katex"><span class="katex-mathml"><math><semantics><mrow><mn>1</mn><mo>&#x2264;</mo><mi>n</mi><mo>&#x2264;</mo><mn>1</mn><msup><mn>0</mn><mn>4</mn></msup></mrow><annotation encoding="application/x-tex">1 \leq n \leq 10^4</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="strut" style="height:0.8141079999999999em;"></span><span class="strut bottom" style="height:0.950078em;vertical-align:-0.13597em;"></span><span class="base textstyle uncramped"><span class="mord mathrm">1</span><span class="mrel">&#x2264;</span><span class="mord mathit">n</span><span class="mrel">&#x2264;</span><span class="mord mathrm">1</span><span class="mord"><span class="mord mathrm">0</span><span class="vlist"><span style="top:-0.363em;margin-right:0.05em;"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">&#x200B;</span></span><span class="reset-textstyle scriptstyle uncramped"><span class="mord mathrm">4</span></span></span><span class="baseline-fix"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">&#x200B;</span></span>&#x200B;</span></span></span></span></span></span>) - el n&#xFA;mero de cubos que tiene Vanya</p>
+<h3 id="salida">Salida</h3>
+<p>Imprime la m&#xE1;xima altura posible de la pir&#xE1;mide que puede construir.</p>
+<h3 id="ejemplos">Ejemplos</h3>
+<pre><code>input:
+1
+
+output:
+1
+</code></pre><pre><code>input:
+25
+
+output:
+4
+</code></pre><h4 id="nota">Nota</h4>
+<p>Ilustraci&#xF3;n del segundo ejemplo:</p>
+<p><img src="http://codeforces.com/predownloaded/09/1a/091ac4ff761d260e70216e1484da7b4187d2e2b8.png" alt=""></p>
 
                     
                     </section>

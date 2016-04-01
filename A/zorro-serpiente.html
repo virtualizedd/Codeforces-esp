@@ -57,7 +57,7 @@
         data-chapter-title="510A- El zorro y la serpiente"
         data-filepath="A/zorro-serpiente.md"
         data-basepath=".."
-        data-revision="Sun Mar 27 2016 15:48:02 GMT-0300 (CLT)"
+        data-revision="Fri Apr 01 2016 16:22:21 GMT-0300 (CLST)"
         data-innerlanguage="">
     
 
@@ -1070,8 +1070,90 @@
                 
                     <section class="normal" id="section-">
                     
-                        <h1 id="510a-el-zorro-y-la-serpiente">510A- El zorro y la serpiente</h1>
+                        <h1 id="510a-el-zorro-y-la-serpiente">[510A] El zorro y la serpiente</h1>
+<hr>
+<p><a href="http://codeforces.com/problemset/problem/510/A" target="_blank">Enlace a Codeforces</a></p>
+<table>
+<thead>
+<tr>
+<th><a href=""></a></th>
+<th style="text-align:right"></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>tiempo l&#xED;mite por test</td>
+<td style="text-align:right">2 segundos</td>
+</tr>
+<tr>
+<td>memoria l&#xED;mite por test</td>
+<td style="text-align:right">256 MB</td>
+</tr>
+<tr>
+<td>entrada</td>
+<td style="text-align:right">entrada est&#xE1;ndar</td>
+</tr>
+<tr>
+<td>salida</td>
+<td style="text-align:right">salida est&#xE1;ndar</td>
+</tr>
+</tbody>
+</table>
+<p>Fox Ciel comenz&#xF3; a aprender a programar. Su primera tarea es dibujar un zorro!
+Sin embargo, resulta que es demasiado dif&#xED;cil para un novato, as&#xED; que decide
+dibujar una serpiente en su lugar.</p>
+<p>Una serpiente es un patr&#xF3;n sobre una cuadr&#xED;cula de <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>n</mi><mo>&#xD7;</mo><mi>m</mi></mrow><annotation encoding="application/x-tex">n \times m</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="strut" style="height:0.58333em;"></span><span class="strut bottom" style="height:0.66666em;vertical-align:-0.08333em;"></span><span class="base textstyle uncramped"><span class="mord mathit">n</span><span class="mbin">&#xD7;</span><span class="mord mathit">m</span></span></span></span>. Expresando la
+c-&#xE9;sima celda de la r-&#xE9;sima fila como (<span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>r</mi><mo separator="true">,</mo><mi>c</mi></mrow><annotation encoding="application/x-tex">r, c</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="strut" style="height:0.43056em;"></span><span class="strut bottom" style="height:0.625em;vertical-align:-0.19444em;"></span><span class="base textstyle uncramped"><span class="mord mathit" style="margin-right:0.02778em;">r</span><span class="mpunct">,</span><span class="mord mathit">c</span></span></span></span>). La cola de la serpiente se ubica
+en (<span class="katex"><span class="katex-mathml"><math><semantics><mrow><mn>1</mn><mo separator="true">,</mo><mn>1</mn></mrow><annotation encoding="application/x-tex">1, 1</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="strut" style="height:0.64444em;"></span><span class="strut bottom" style="height:0.8388800000000001em;vertical-align:-0.19444em;"></span><span class="base textstyle uncramped"><span class="mord mathrm">1</span><span class="mpunct">,</span><span class="mord mathrm">1</span></span></span></span>), luego su cuerpo se extiende a (<span class="katex"><span class="katex-mathml"><math><semantics><mrow><mn>1</mn><mo separator="true">,</mo><mi>m</mi></mrow><annotation encoding="application/x-tex">1, m</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="strut" style="height:0.64444em;"></span><span class="strut bottom" style="height:0.8388800000000001em;vertical-align:-0.19444em;"></span><span class="base textstyle uncramped"><span class="mord mathrm">1</span><span class="mpunct">,</span><span class="mord mathit">m</span></span></span></span>), luego se desplaza dos filas abajo
+hacia (<span class="katex"><span class="katex-mathml"><math><semantics><mrow><mn>3</mn><mo separator="true">,</mo><mi>m</mi></mrow><annotation encoding="application/x-tex">3, m</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="strut" style="height:0.64444em;"></span><span class="strut bottom" style="height:0.8388800000000001em;vertical-align:-0.19444em;"></span><span class="base textstyle uncramped"><span class="mord mathrm">3</span><span class="mpunct">,</span><span class="mord mathit">m</span></span></span></span>), luego se mueve a la izquierda hasta (<span class="katex"><span class="katex-mathml"><math><semantics><mrow><mn>3</mn><mo separator="true">,</mo><mn>1</mn></mrow><annotation encoding="application/x-tex">3, 1</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="strut" style="height:0.64444em;"></span><span class="strut bottom" style="height:0.8388800000000001em;vertical-align:-0.19444em;"></span><span class="base textstyle uncramped"><span class="mord mathrm">3</span><span class="mpunct">,</span><span class="mord mathrm">1</span></span></span></span>) y as&#xED; en adelante.</p>
+<p>Tu tarea es dibujar esta serpiente para Fox Ciel: las celdas vac&#xED;as se deber&#xED;an
+representar con el caracter punto (&apos;.&apos;) y las celdas ocupadas por la serpiente se
+deber&#xED;an rellenar con un gato (&apos;#&apos;).</p>
+<p>Considera las pruebas de ejemplo con el fin de comprender el patr&#xF3;n de la serpiente.</p>
+<h3 id="entrada">Entrada</h3>
+<p>Dos enteros <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>n</mi></mrow><annotation encoding="application/x-tex">n</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="strut" style="height:0.43056em;"></span><span class="strut bottom" style="height:0.43056em;vertical-align:0em;"></span><span class="base textstyle uncramped"><span class="mord mathit">n</span></span></span></span> y <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>m</mi></mrow><annotation encoding="application/x-tex">m</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="strut" style="height:0.43056em;"></span><span class="strut bottom" style="height:0.43056em;vertical-align:0em;"></span><span class="base textstyle uncramped"><span class="mord mathit">m</span></span></span></span> (<span class="katex"><span class="katex-mathml"><math><semantics><mrow><mn>3</mn><mo>&#x2264;</mo><mi>n</mi><mo separator="true">,</mo><mi>m</mi><mo>&#x2264;</mo><mn>5</mn><mn>0</mn></mrow><annotation encoding="application/x-tex">3 \leq n, m \leq 50</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="strut" style="height:0.64444em;"></span><span class="strut bottom" style="height:0.8388800000000001em;vertical-align:-0.19444em;"></span><span class="base textstyle uncramped"><span class="mord mathrm">3</span><span class="mrel">&#x2264;</span><span class="mord mathit">n</span><span class="mpunct">,</span><span class="mord mathit">m</span><span class="mrel">&#x2264;</span><span class="mord mathrm">5</span><span class="mord mathrm">0</span></span></span></span>).</p>
+<p><span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>n</mi></mrow><annotation encoding="application/x-tex">n</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="strut" style="height:0.43056em;"></span><span class="strut bottom" style="height:0.43056em;vertical-align:0em;"></span><span class="base textstyle uncramped"><span class="mord mathit">n</span></span></span></span> es un n&#xFA;mero <strong>impar</strong></p>
+<h3 id="salida">Salida</h3>
+<p>Imprime <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>n</mi></mrow><annotation encoding="application/x-tex">n</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="strut" style="height:0.43056em;"></span><span class="strut bottom" style="height:0.43056em;vertical-align:0em;"></span><span class="base textstyle uncramped"><span class="mord mathit">n</span></span></span></span> l&#xED;neas. Cada l&#xED;nea debe contener una cadena de <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>m</mi></mrow><annotation encoding="application/x-tex">m</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="strut" style="height:0.43056em;"></span><span class="strut bottom" style="height:0.43056em;vertical-align:0em;"></span><span class="base textstyle uncramped"><span class="mord mathit">m</span></span></span></span> caracteres.
+No imprimas espacios.</p>
+<h3 id="ejemplos">Ejemplos</h3>
+<pre><code>input:
+3 3
 
+output:
+###
+..#
+###
+</code></pre><pre><code>input:
+3 4
+
+output:
+####
+...#
+####
+</code></pre><pre><code>input:
+5 3
+
+output:
+###
+..#
+###
+#..
+###
+</code></pre><pre><code>input:
+9 9
+
+output:
+#########
+........#
+#########
+#........
+#########
+........#
+#########
+#........
+#########
+</code></pre>
                     
                     </section>
                 
